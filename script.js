@@ -2,34 +2,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const brands = [
         {
-            logo: 'brand1_logo.png',
-            name: 'Purposeful Brand 1',
-            description: 'This is a mission statement for the first purposeful brand.',
-            url: 'https://example.com/brand1'
+            logo: 'madeby13.png',
+            name: 'MadeBy13',
+            description: 'MadeBy13 started a neurodivergent clothing company that has grown into so much more.',
+            url: 'https://madeby13.com/'
         },
         {
-            logo: 'brand2_logo.png',
-            name: 'Digital Tool 2',
+            logo: 'echomate.png',
+            name: 'EchoMate App',
             description: 'This is a description for the second innovative digital tool.',
-            url: 'https://example.com/brand2'
+            url: 'https://echomate.app/'
         },
         {
-            logo: 'brand3_logo.png',
-            name: 'Community Project 3',
+            logo: 'autismoverland.png',
+            name: 'AutismOverland',
             description: 'A community-focused project that brings people together.',
-            url: 'https://example.com/brand3'
+            url: 'https://autismoverland.com/'
         },
         {
-            logo: 'brand4_logo.png',
-            name: 'Accessible Tech 4',
-            description: 'Technology designed with accessibility at its core.',
-            url: 'https://example.com/brand4'
+            logo: 'wheredirtlies.png',
+            name: '@WhereDirtLies',
+            description: 'An AI powered social media account.',
+            url: 'https://wheredirtlies.com/'
         },
         {
-            logo: 'brand5_logo.png',
-            name: 'Bold Visuals 5',
-            description: 'A brand that pushes the boundaries of visual design.',
-            url: 'https://example.com/brand5'
+            logo: '13audhd.png',
+            name: '13AuDHD',
+            description: 'A personal brand of Thirteen.',
+            url: 'https://13audhd.com/'
         }
     ];
 
