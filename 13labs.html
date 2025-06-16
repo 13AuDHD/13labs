@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>13labs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 20px;
+    }
+    header img {
+      max-width: 200px;
+    }
+    main {
+      padding: 20px;
+    }
+    .carousel-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 20px;
+      gap: 30px;
+      justify-content: center;
+    }
+    .carousel-container::-webkit-scrollbar {
+      display: none;
+    }
+    .brand-logo {
+      flex: 0 0 auto;
+      width: 100px;
+      height: 100px;
+      background-color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .footer {
+      padding: 40px 20px;
+      font-size: 14px;
+    }
+    a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+    .modal.show {
+      display: flex;
+    }
+    .modal-content {
+      max-width: 500px;
+    }
+    .modal-logo {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    .modal h2 {
+      margin-top: 0;
+    }
+    .modal button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="13labs Logo" />
+  </header>
+  <main>
+    <p>13labs is a creative ventures and brand holdings company based in Durango, Colorado. We develop and support innovative projects across technology, design, and digital media. Our mission is to build purposeful brands and tools that empower creators, challenge norms, and reflect real-world experiences. Below is a selection from our growing portfolio.</p>
+    <div class="carousel-container" id="carousel">
+      <div class="brand-logo" onclick="openModal('MadeBy13', 'Maker of cool neurodivergent-friendly gear and art.', 'https://madeby13.com')">MB13</div>
+      <div class="brand-logo" onclick="openModal('13audhd', 'Community and support for autistic + ADHD adults living differently.', 'https://13audhd.com')">13A</div>
+      <div class="brand-logo" onclick="openModal('EchoMate', 'Voice-cloning AAC assistant for nonverbal communication.', 'https://echomate.app')">EM</div>
+    </div>
+  </main>
+
+  <div class="footer">
+    &copy; 2025 13labs LLC • 
+    <a href="mailto:hi@13labs.co">Contact</a> • 
+    <a href="/privacy">Privacy Policy</a>
+  </div>
+
+  <div class="modal" id="brandModal">
+    <div class="modal-content">
+      <img class="modal-logo" id="modalLogo" src="logo.png" alt="Brand Logo" />
+      <h2 id="modalTitle">Brand Name</h2>
+      <p id="modalDescription">Brand Description</p>
+      <button id="modalLaunch" onclick="">Open</button>
+    </div>
+  </div>
+
+  <script>
+    function openModal(title, desc, url) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalDescription').textContent = desc;
+      document.getElementById('modalLaunch').onclick = () => window.open(url, '_blank');
+      document.getElementById('brandModal').classList.add('show');
+    }
+    document.getElementById('brandModal').addEventListener('click', function(e) {
+      if (e.target === this) this.classList.remove('show');
+    });
+  </script>
+</body>
+</html>
