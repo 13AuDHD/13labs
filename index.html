@@ -1,52 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>13labs</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13labs | Creative Studio & Brand Holdings</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-  <header>
-    <img src="main_logo.png" alt="13labs Logo" />
-  </header>
-  <main>
-    <p>13labs is a creative ventures and brand holdings company based in Durango, Colorado. We develop and support innovative projects across technology, design, and digital media. Our mission is to build purposeful brands and tools that empower creators, challenge norms, and reflect real-world experiences. Below is a selection from our growing portfolio.</p>
-    <div class="carousel-container" id="carousel">
-      <div class="brand-logo" onclick="openModal('MadeBy13', 'Maker of cool neurodivergent-friendly gear and art.', 'https://madeby13.com')">MB13</div>
-      <div class="brand-logo" onclick="openModal('13audhd', 'Community and support for autistic + ADHD adults living differently.', 'https://13audhd.com')">13A</div>
-      <div class="brand-logo" onclick="openModal('EchoMate', 'Voice-cloning AAC assistant for nonverbal communication.', 'https://echomate.app')">EM</div>
+
+    <header>
+        <img src="main_logo.png" alt="13labs Logo" class="main-logo">
+    </header>
+
+    <main>
+        <section class="mission">
+            <p>13labs is a creative studio and brand holdings company based in Durango, Colorado. We build purposeful brands, digital tools, and community-focused projects that challenge norms and reflect real life. It’s messy, beautiful, and human. From accessibility-focused tech to bold visual design, every venture under 13labs is driven by curiosity, honesty, and a need to make things that actually help people. This isn’t just business. It’s personal, and it always will be.</p>
+        </section>
+
+        <section class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-track">
+                    </div>
+            </div>
+            <button class="carousel-arrow prev" aria-label="Previous">&lt;</button>
+            <button class="carousel-arrow next" aria-label="Next">&gt;</button>
+        </section>
+
+        <section class="contact">
+            <a href="mailto:hi@13labs.co" class="contact-button">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 13labs. All Rights Reserved.</p>
+        <p>Durango, Colorado</p>
+    </footer>
+
+    <div id="brandModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="" alt="Brand Logo" class="modal-logo">
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <a href="#" class="modal-link" target="_blank">Launch</a>
+        </div>
     </div>
-  </main>
-  </div>
 
-  <div class="footer">
-    &copy; 2025 13labs LLC • 
-    <a href="mailto:hi@13labs.co">Contact</a> • 
-    <a href="/privacy">Privacy Policy</a>
-  </div>
-
-  <div class="modal" id="brandModal">
-    <div class="modal-content">
-      <img class="modal-logo" id="modalLogo" src="logo.png" alt="Brand Logo" />
-      <h2 id="modalTitle">Brand Name</h2>
-      <p id="modalDescription">Brand Description</p>
-      <button id="modalLaunch" onclick="">Open</button>
-    </div>
-  </div>
-
-  <script>
-    function openModal(title, desc, url) {
-      document.getElementById('modalTitle').textContent = title;
-      document.getElementById('modalDescription').textContent = desc;
-      document.getElementById('modalLaunch').onclick = () => window.open(url, '_blank');
-      document.getElementById('brandModal').classList.add('show');
-    }
-    document.getElementById('brandModal').addEventListener('click', function(e) {
-      if (e.target === this) this.classList.remove('show');
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
