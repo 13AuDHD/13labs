@@ -46,6 +46,9 @@
       padding: 40px 20px;
       font-size: 14px;
     }
+    .flag {
+        width: 1.5em; height: 1em; position: relative; display: inline-block; vertical-align: middle; margin-left: 0.5em;
+    }
     a {
       color: #aaa;
       text-decoration: none;
