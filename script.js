@@ -164,3 +164,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal functionality (unchanged)
 
 });
+
+// Contact modal logic
+const modal = document.getElementById("contact-modal");
+const openBtn = document.getElementById("open-contact-modal");
+const closeBtn = document.querySelector(".close-button");
+
+if (modal && openBtn && closeBtn) {
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}
