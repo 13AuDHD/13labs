@@ -68,37 +68,28 @@ body {
     transform: scale(1.05);
 }
 
-/* --- Improved Arrow Styles --- */
 .carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #fff;
-    cursor: pointer;
-    border-radius: 50%; /* Makes the button circular */
-    width: 44px;        /* Explicit width */
-    height: 44px;       /* Explicit height */
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.carousel-arrow:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.carousel-arrow.prev {
+  left: 10px;
 }
 
-.prev {
-    left: -22px; /* Position half-way outside the container */
+.carousel-arrow.next {
+  right: 10px;
 }
 
-.next {
-    right: -22px; /* Position half-way outside the container */
+.carousel-arrow i {
+  pointer-events: none;
 }
 
     .footer {
