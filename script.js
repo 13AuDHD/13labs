@@ -136,3 +136,31 @@ if (modal && openBtn && closeBtn) {
     }
   });
 }
+
+// Brand modal setup
+const brandModal = document.getElementById("brand-modal");
+const closeBtn = brandModal.querySelector(".close-button");
+
+document.querySelectorAll(".brand-logo").forEach(logo => {
+  logo.addEventListener("click", () => {
+    const name = logo.dataset.name;
+    const url = logo.dataset.url;
+    const description = logo.dataset.description;
+    const src = logo.src;
+
+    document.getElementById("brand-modal-logo").src = src;
+    document.getElementById("brand-modal-logo").alt = name + " Logo";
+    document.getElementById("brand-modal-name").textContent = name;
+    document.getElementById("brand-modal-url").textContent = url.replace(/^https?:\/\//, '');
+    document.getElementById("brand-modal-url").href = url;
+    document.getElementById("brand-modal-description").textContent = description;
+    document.getElementById("brand-modal-link").href = url;
+
+    brandModal.style.display = "flex";
+  });
+});
+
+closeBtn.addEventListener("click", () => brandModal.style.display = "none");
+window.addEventListener("click", (e) => {
+  if (e.target === brandModal) brandModal.style.display = "none";
+});
