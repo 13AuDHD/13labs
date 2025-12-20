@@ -2,9 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const carouselContainer = document.querySelector('.carousel-container');
     const carouselTrack = document.querySelector('.carousel-track');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-
+    const prevButton = document.querySelector('.carousel-arrow.prev');
+    const nextButton = document.querySelector('.carousel-arrow.next');
     let allSlides = Array.from(carouselTrack.children);
     let currentIndex = 0;
     let isDragging = false;
