@@ -235,15 +235,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Contact modal logic
 const modal = document.getElementById("contact-modal");
-const openBtn = document.getElementById("open-contact-modal");
-const closeBtn = document.querySelector(".close-button");
+const openBtnContact = document.getElementById("open-contact-modal");
+const closeBtnContact = document.querySelector(".close-button");
 
-if (modal && openBtn && closeBtn) {
-  openBtn.addEventListener("click", () => {
+if (modal && openBtnContact && closeBtnContact) {
+  openBtnContact.addEventListener("click", () => {
     modal.style.display = "flex";
   });
 
-  closeBtn.addEventListener("click", () => {
+  closeBtnContact.addEventListener("click", () => {
     modal.style.display = "none";
   });
 
@@ -256,7 +256,7 @@ if (modal && openBtn && closeBtn) {
 
 // Brand modal setup
 const brandModal = document.getElementById("brand-modal");
-const closeBtnBrand = brandModal.querySelector(".close-button");
+const closeBtn = brandModal.querySelector(".close-button");
 
 document.querySelectorAll(".brand-logo").forEach(logo => {
   logo.addEventListener("click", () => {
