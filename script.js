@@ -256,7 +256,7 @@ if (modal && openBtn && closeBtn) {
 
 // Brand modal setup
 const brandModal = document.getElementById("brand-modal");
-const closeBtn = brandModal.querySelector(".close-button");
+const closeBtnBrand = brandModal.querySelector(".close-button");
 
 document.querySelectorAll(".brand-logo").forEach(logo => {
   logo.addEventListener("click", () => {
