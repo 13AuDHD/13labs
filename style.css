@@ -5,7 +5,7 @@ body {
     font-family: sans-serif;
     font-size: 14px;
     background-color: #0e0e0e;
-    background: url('main_bg.png') no-repeat center center fixed;
+    background: url('/main_bg.png') no-repeat center center fixed;
     background-size: cover;
     text-color: #fff;
     text-align: center;
