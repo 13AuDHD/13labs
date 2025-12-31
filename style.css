@@ -28,7 +28,7 @@ main {
     max-width: 600px;
     background-color: rgba(0, 0, 0, 0.85);
     color: fff;
-    border-radius: 13px
+    border-radius: 13px;
 }
 .carousel-container {
     position: relative;
