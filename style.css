@@ -4,10 +4,23 @@ body {
     margin: 0 auto;
     font: 14px sans-serif;
     color: #fff;
-    background-color: #0e0e0e;
-    background: url('/main_bg.png') no-repeat center center fixed;
-    background-size: cover;
     text-align: center;
+    background-color: #0e0e0e;
+}
+.bg {
+  background-color: #0e0e0e;
+  position: fixed;
+  inset: 0;
+  background-image: url("/main_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .bg {
+    background-image: url("/mobile_bg.webp");
+  }
 }
 .container {
     margin: 0 auto;
