@@ -2,8 +2,7 @@
 
 body {
     margin: 0 auto;
-    font-family: sans-serif;
-    font-size: 14px;
+    font: 14px sans-serif #fff;
     background-color: #0e0e0e;
     background: url('/main_bg.png') no-repeat center center fixed;
     background-size: cover;
@@ -26,7 +25,8 @@ main {
     margin: 0 auto;
     padding: 20px;
     max-width: 600px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.85);
+    font-color: fff;
 }
 .carousel-container {
     position: relative;
