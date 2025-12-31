@@ -52,7 +52,7 @@ main {
 }
 
 .carousel {
-   /* overflow: hidden;  This hides the parts of the track that are off-screen */
+    overflow: hidden;  /* This hides the parts of the track that are off-screen */
     width: 100%;
 }
 
@@ -72,7 +72,7 @@ main {
 }
 
 .brand-logo {
-    max-width: 180px;
+    max-width: 280px;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
@@ -105,18 +105,6 @@ main {
   pointer-events: none;
 }
 
-    .footer {
-      margin: 0 auto;
-      padding: 40px 20px;
-      font-size: 0.7rem;
-    }
-    .flag {
-        width: 1.5em; height: 1em; position: relative; display: inline-block; vertical-align: middle; margin-left: 0.5em;
-    }
-    a {
-      color: #aaa;
-      text-decoration: none;
-    }
   /* Button styling (shared) */
 .contact-button {
   background-color: #222;
@@ -205,4 +193,18 @@ main {
   font-size: 1.5rem;
   color: #aaa;
   cursor: pointer;
+}
+
+
+.footer {
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-size: 0.7rem;
+}
+.flag {
+    width: 1.5em; height: 1em; position: relative; display: inline-block; vertical-align: middle; margin-left: 0.5em;
+}
+a {
+  color: #aaa;
+  text-decoration: none;
 }
