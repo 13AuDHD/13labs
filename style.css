@@ -17,7 +17,7 @@ header {
 #main-logo {
     max-width: 100%;
     height: auto;
-    width: clamp(200px, 50vw, 500px);
+    width: clamp(150px, 50vw, 300px);
     display: block;
     margin: 0 auto;
 }
