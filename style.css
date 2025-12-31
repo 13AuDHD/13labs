@@ -144,11 +144,15 @@ main {
   align-items: center;
   z-index: 1000;
   flex-direction: column;
-  padding: 40px 1px;
+  padding: 40px;
+}
+@media (max-width: 768px) {
+.modal {
+  padding: 40px 5px;
 }
 
 .modal-content {
-    position: relative;
+  position: relative;
   background-color: #1a1a1a;
   color: #fff;
   padding: 30px 5px;
