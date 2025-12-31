@@ -34,7 +34,7 @@ main {
     position: relative;
     width: 90%;
     max-width: 1200px;
-    margin: 60px auto; /* Increased margin for better spacing */
+    margin: 40px auto; /* Increased margin for better spacing */
     -webkit-touch-callout: none; /* Disable callout on long press on iOS */
     -webkit-user-select: none;   /* Disable selection */
     -khtml-user-select: none;
@@ -52,7 +52,7 @@ main {
 }
 
 .carousel {
-    overflow: hidden; /* This hides the parts of the track that are off-screen */
+   /* overflow: hidden;  This hides the parts of the track that are off-screen */
     width: 100%;
 }
 
