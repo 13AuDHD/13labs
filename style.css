@@ -147,8 +147,9 @@ main {
   padding: 40px 10px;
 }
 @media (max-width: 768px) {
-.modal {
-  padding: 40px 5px;
+    .modal {
+      padding: 40px 5px;
+    }
 }
 
 .modal-content {
