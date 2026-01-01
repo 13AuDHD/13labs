@@ -148,7 +148,7 @@ main {
 }
 @media (max-width: 768px) {
     .modal {
-      padding: 40px 5px;
+      padding: 20px 5px;
     }
 }
 
@@ -156,10 +156,9 @@ main {
   position: relative;
   background-color: #1a1a1a;
   color: #fff;
-  padding: 30px 5px;
+  padding: 20px 10px;
   border-radius: 13px;
   max-width: 500px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
 .modal-content h2 {
