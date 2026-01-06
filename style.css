@@ -213,10 +213,14 @@ main {
 }
 
 
-.footer {
+footer {
   margin: 0 auto;
   padding: 40px 20px;
   font-size: 0.7rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
 }
 .flag {
     width: 1.5em; 
@@ -226,7 +230,11 @@ main {
     vertical-align: middle; 
     margin-left: 0.5em;
 }
-footer a {
-  color: #fff;
-  text-decoration: underline;
+.left {
+    position: absolute; 
+    left: 0; top: 0; 
+    width: 0; height: 0; 
+    border-top: 0.5em solid transparent; 
+    border-bottom: 0.5em solid transparent; 
+    border-left: 1em solid #ce1126;
 }
