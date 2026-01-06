@@ -226,7 +226,7 @@ main {
     vertical-align: middle; 
     margin-left: 0.5em;
 }
-footer.a {
+footer a {
   color: #000;
   text-decoration: none;
 }
