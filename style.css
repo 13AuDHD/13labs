@@ -227,6 +227,6 @@ main {
     margin-left: 0.5em;
 }
 footer a {
-  color: #000;
-  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
 }
